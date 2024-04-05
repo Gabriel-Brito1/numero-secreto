@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --font-family: "Rubik", sans-serif;
+    --primary-color: #FFE6E6;
+    --teste: #fdfd96;
+}
+
+[status='ativo'] {
+    --bg-color: #7469B6;
+    --bg-light: #9589dc;
+}
+
+[status='game-over']{
+    --bg-color: #000;
+    --bg-light: #555;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3.5em;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.box {
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.btn-jogar-novamente {
+    background: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    padding: 10px 25px;
+    margin-top: 30px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.btn-jogar-novamente:hover {
+    background: var(--bg-light);
+    transform: scale(1.1);
+}
